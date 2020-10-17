@@ -22,7 +22,8 @@
 
   <ItemGroup>
     <Folder Include="Application\Validation" />
-    <Folder Include="Domain" />
+    <Folder Include="Integration" />
+    <Folder Include="Persistance" />
   </ItemGroup>
 
 </Project>
