@@ -20,9 +20,9 @@ namespace API.Data.Migrations
                     DeletedOn = table.Column<DateTimeOffset>(nullable: true),
                     DeletedBy = table.Column<string>(nullable: true),
                     IsDeleted = table.Column<bool>(nullable: false),
-                    Description = table.Column<string>(nullable: true),
-                    ImageUrl = table.Column<string>(nullable: true),
-                    UserId = table.Column<string>(nullable: true)
+                    Description = table.Column<string>(maxLength: 2000, nullable: false),
+                    ImageUrl = table.Column<string>(nullable: false),
+                    UserId = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
